@@ -3,7 +3,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, Chat, CallbackQuery
 from VCPlayBot.helpers.decorators import authorized_users_only
-from VCPlayBot.config import BOT_NAME, BOT_USERNAME, OWNER_NAME, SUPPORT_GROUP, UPDATES_CHANNEL, ASSISTANT_NAME
+from VCPlayBot.config import CUTE_BUGGU, @cute_buggu_robot, @Cute_Buggu, https://t.me/LOVEYOUZINDGI_01, https://t.me/NEVER_BE_ALONE01, ASSISTANT_NAME
 from VCPlayBot.modules.play import cb_admin_check
 
 
@@ -11,7 +11,7 @@ from VCPlayBot.modules.play import cb_admin_check
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""<b>✨ **Welcome user, i'm {query.message.from_user.mention}** \n
-💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) 𝗮𝗹𝗹𝗼𝘄 𝘆𝗼𝘂 𝘁𝗼 𝗽𝗹𝗮𝘆 𝗺𝘂𝘀𝗶𝗰 𝗼𝗻 𝗴𝗿𝗼𝘂𝗽𝘀 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝘁𝗵𝗲 𝗻𝗲𝘄 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺'𝘀 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁𝘀 !**
+💭 **[{CUTE_BUGGU}](https://t.me/{@cute_buggu_robot}) 𝗮𝗹𝗹𝗼𝘄 𝘆𝗼𝘂 𝘁𝗼 𝗽𝗹𝗮𝘆 𝗺𝘂𝘀𝗶𝗰 𝗼𝗻 𝗴𝗿𝗼𝘂𝗽𝘀 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝘁𝗵𝗲 𝗻𝗲𝘄 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺'𝘀 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁𝘀 !**
 
 💡 **𝗙𝗶𝗻𝗱 𝗼𝘂𝘁 𝗮𝗹𝗹 𝘁𝗵𝗲 𝗕𝗼𝘁'𝘀 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗮𝗻𝗱 𝗵𝗼𝘄 𝘁𝗵𝗲𝘆 𝘄𝗼𝗿𝗸 𝗯𝘆 𝗰𝗹𝗶𝗰𝗸𝗶𝗻𝗴 𝗼𝗻 𝘁𝗵𝗲 » 📚 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗯𝘂𝘁𝘁𝗼𝗻 !**
 
@@ -21,7 +21,7 @@ async def cbstart(_, query: CallbackQuery):
             [ 
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        "➕ Add me to your Group ➕", url=f"https://t.me/{@cute_buggu_robot}?startgroup=true")
                 ],[
                     InlineKeyboardButton(
                         "❓ How to use Me", callback_data="cbhowtouse")
@@ -30,13 +30,13 @@ async def cbstart(_, query: CallbackQuery):
                          "📚 Commands", callback_data="cbcmds"
                     ),
                     InlineKeyboardButton(
-                        "💝 Donate", url=f"https://t.me/{OWNER_NAME}")
+                        "💝 Donate", url=f"https://t.me/{@Cute_Buggu}")
                 ],[
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "👥 Official Group", url=f"https://t.me/{https://t.me/LOVEYOUZINDGI_01}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
+                        "📣 Official Channel", url=f"https://t.me/{https://t.me/NEVER_BE_ALONE01}")
                 ],[
                     InlineKeyboardButton(
                         "🧪 Source Code 🧪", url="https://github.com/QuennArzoo/VCPlayBot"
@@ -55,7 +55,7 @@ async def cbhelp(_, query: CallbackQuery):
 
 **in this menu you can open several available command menus, in each command menu there is also a brief explanation of each command**
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {CUTE_BUGGU} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -118,9 +118,9 @@ async def cbbasic(_, query: CallbackQuery):
 - /cskip - skip streaming to the next song
 - /cend - end the streaming music
 - /admincache - refresh the admin cache
-- /userbotjoin: Invite @{ASSISTANT_NAME} Userbot to your chat
+- /userbotjoin: Invite @{Cute_Kairu} Userbot to your chat
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {CUTE_BUGGU} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -144,7 +144,7 @@ async def cbadvanced(_, query: CallbackQuery):
 /ping - check the bot ping status
 /uptime - check the bot uptime status
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {CUTE_BUGGU} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -178,7 +178,7 @@ async def cbadmin(_, query: CallbackQuery):
 /m and /tm (mute / temporary mute) - mute permanently or temporarily muted user in group
 /um - to unmute user you're muted in group
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {CUTE_BUGGU} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -202,7 +202,7 @@ async def cbsudo(_, query: CallbackQuery):
 /rmd - remove all downloaded files
 /clean - Remove all raw files
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {CUTE_BUGGU} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -228,7 +228,7 @@ async def cbowner(_, query: CallbackQuery):
 
 📝 note: all commands owned by this bot can be executed by the owner of the bot without any exceptions.
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {CUTE_BUGGU} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -252,7 +252,7 @@ async def cbfun(_, query: CallbackQuery):
 /truth - check it by yourself
 /dare - check it by yourself
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {CUTE_BUGGU} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -272,10 +272,10 @@ async def cbguide(_, query: CallbackQuery):
 
 1.) first, add me to your group.
 2.) then promote me as admin and give all permissions except anonymous admin.
-3.) add @{ASSISTANT_NAME} to your group or type /userbotjoin to invite her.
+3.) add @{Kunal} to your group or type /userbotjoin to invite her.
 4.) turn on the voice chat first before start to play music.
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {CUTE_BUGGU} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -366,7 +366,7 @@ and you can also set a time for the ban and mute penalties for members in your g
 
 📝 note: cmd /b, /tb and /ub is the function to banned/unbanned user from your group, whereas /m, /tm and /um are commands to mute/unmute user in your group.
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {CUTE_BUGGU} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -396,7 +396,7 @@ async def cbdelcmds(_, query: CallbackQuery):
  2️⃣ to turn off feature:
      » type `/delcmd off`
       
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {CUTE_BUGGU} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -416,7 +416,7 @@ async def cbhelps(_, query: CallbackQuery):
 
 **in this menu you can open several available command menus, in each command menu there is also a brief explanation of each command**
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {CUTE_BUGGU} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -462,10 +462,10 @@ async def cbguides(_, query: CallbackQuery):
 
 1.) first, add me to your group.
 2.) then promote me as admin and give all permissions except anonymous admin.
-3.) add @{ASSISTANT_NAME} to your group or type /userbotjoin to invite her.
+3.) add @{@Cute_Kairu}to your group or type /userbotjoin to invite her.
 4.) turn on the voice chat first before start to play music.
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {CUTE_BUGGU} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
