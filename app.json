@@ -1,5 +1,5 @@
 {
-  "name": "VCPlayBot",
+  "name": "CUTE BUGGU",
   "logo": "https://telegra.ph/file/7ffa8d18b9b7f1b51a81e.jpg",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
@@ -20,10 +20,10 @@
       "required": true
     },
     "BOT_USERNAME": {
-      "description": "Your bot's username without @",
+      "description": "Your bot's username without @"cute_buggu_robot,
       "required": true
     },
-    "BOT_NAME": {
+    "BOT_NAME": {CUTE BUGGU
       "description": "Your MusicPlayer Bot Name.",
       "required": false,
       "value": ""
@@ -31,7 +31,7 @@
     "SUPPORT_GROUP": {
       "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
       "required": false,
-      "value": "AwesomeSupport"
+      "value": "JUST FEELINGS"
     },
     "PROJECT_NAME": {
       "description": "Your MusicPlayer project Name.",
